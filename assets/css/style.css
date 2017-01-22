@@ -112,10 +112,9 @@ blockquote {
   height: 100vh;
   background: #202638 url("../img/bg-login.jpg") top center/cover no-repeat; }
   .sign-up-section--mobile .sign-up-form {
-    width: 250px;
-    position: relative;
-    top: 1em; }
+    width: 250px; }
   .sign-up-section--mobile .sign-up-form__logo {
+    margin-top: 2em;
     margin-bottom: 2.5em; }
   .sign-up-section--mobile .sign-up-form__header {
     margin-bottom: 0.5em; }
