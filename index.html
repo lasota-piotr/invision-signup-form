@@ -51,6 +51,10 @@
 		  You will need to create new builds to get the detects you need. -->
 	<script src="assets/js/libs/modernizr-3.2.0.base.js"></script>
 
+	<!-- Fonts and icons -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=latin-ext" 
+		rel="stylesheet">
+
 	<!-- Twitter: see https://dev.twitter.com/docs/cards/types/summary-card for details -->
 	<meta name="twitter:card" content="">
 	<meta name="twitter:site" content="">
@@ -69,7 +73,22 @@
 
 <div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
 
-	<section class="sign-up-section">
+	<section class="sign-up-section sign-up-section--mobile">
+		<form action="" class="sign-up-form">
+			<img class="sign-up-form__logo" src="assets/img/logo@2x.png"></img>
+			<h2 class="sign-up-form__header">Get<br> started free!</h2>
+			<p class="sign-up-form__info">no credit card required</p>
+			<input type="text" class="sign-up-form__input" name="username" id="username" placeholder="Your name" required>
+			<input type="email" class="sign-up-form__input" name="useremail" id="useremail" placeholder="Your email" required>
+			<input type="password" class="sign-up-form__input" name="userpassword" id="userpassword" placeholder="Password" required>
+			<input type="Submit" class="btn" value="Sign up free">
+			<p class="sign-up-form__info">
+				By clicking "Sign Up Free" I agree to InVision’s <a href="#" class="sign-up-form__link">Terms of Service</a>.</p>
+			<p class="sign-up-form__info sign-up-form__info--light">Already have an account? <a href="#" class="sign-up-form__link sign-up-form__link--accent">Login</a></p>
+			
+		</form>
+	</section>
+	<section class="sign-up-section sign-up-section--desktop">
 		<article class="sign-up-article">
 			<header class="sign-up-article__header">
 				<div class="sign-up-article__logo"></div>
@@ -93,31 +112,33 @@
 			</ul>
 			<footer class="sign-up-footer">
 				<h3 sign-up-footer__header>Trusted by the World's Smartest Companies</h3>
-				<ul class="sign-up-companies-list">
-					<li class="sign-up-companies-list__item"></li>
-					<li class="sign-up-companies-list__item"></li>
-					<li class="sign-up-companies-list__item"></li>
-					<li class="sign-up-companies-list__item"></li>
+				<ul class="sign-up-customers-list">
+					<li class="sign-up-customers-list__item"></li>
+					<li class="sign-up-customers-list__item"></li>
+					<li class="sign-up-customers-list__item"></li>
+					<li class="sign-up-customers-list__item"></li>
 				</ul>
 			</footer>
-			<form action="" class="sign-up-form">
-				<h2 class="sign-up-form__header">Try Invision Now—Free</h2>
-				<p class="sign-up-form__info">No setup fees. No requirements. No obligation.</p>
-				<div class="sign-up-form__group">
-					<label for="" class="sign-up-form__label">Full name</label>
-					<input type="text" class="sign-up-form__input" name="username" id="username"required>
-				</div>
-				<div class="sign-up-form__group">
-					<label for="" class="sign-up-form__label">Email</label>
-					<input type="email" class="sign-up-form__input" name="useremail" id="useremail" required>
-				</div>
-				<div class="sign-up-form__group">
-					<label for="" class="sign-up-form__label">Password</label>
-					<input type="password" class="sign-up-form__input" name="userpassword" id="userpassword" required>
-				</div>
-				<input type="Submit" class="sign-up-from__input--submit-btn" value="Start now">
-			</form>
 		</article>
+		<form action="" class="sign-up-form">
+			<h2 class="sign-up-form__header">Try Invision Now—Free</h2>
+			<p class="sign-up-form__info">No setup fees. No requirements. No obligation.</p>
+			<div class="sign-up-form__group">
+				<label for="" class="sign-up-form__label">Full name</label>
+				<input type="text" class="sign-up-form__input" name="username" id="username"required>
+			</div>
+			<div class="sign-up-form__group">
+				<label for="" class="sign-up-form__label">Email</label>
+				<input type="email" class="sign-up-form__input" name="useremail" id="useremail" required>
+			</div>
+			<div class="sign-up-form__group">
+				<label for="" class="sign-up-form__label">Password</label>
+				<input type="password" class="sign-up-form__input" name="userpassword" id="userpassword" required>
+			</div>
+			<div class="sign-up-form__group">
+				<input type="Submit" class="btn" value="Start now">
+			</div>
+		</form>
 	</section>
 
 </div>
