@@ -33,8 +33,12 @@ textarea:-moz-placeholder { color:#a9a9a9; }
 /* let's give blockquotes *some* default styling, because unstyled blockquotes are dangerous */
 blockquote {padding: 16px; background: #eee;}
 
+.wrapper {
+  height: 1000px;
+} 
 
 .sign-up-section {
+  width: 100%;
   display: flex;
   justify-content: center;
 }
@@ -83,10 +87,12 @@ blockquote {padding: 16px; background: #eee;}
   color: $color-text;
   font-size: 0.85em;
   text-align: center;
+  line-height: 1.4em;
 }
 
 .sign-up-form__info--light {
   color: $color--light;
+  font-size: 0.78em;
 }
 
 .sign-up-form__link {
@@ -150,8 +156,12 @@ blockquote {padding: 16px; background: #eee;}
   }
   
   .sign-up-section--desktop {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
     display: flex;
-    width: 100vw;
+    max-width: 1080px;
 
     .sign-up-article {
       width: 50%;

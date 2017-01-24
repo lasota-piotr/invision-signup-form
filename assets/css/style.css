@@ -51,7 +51,11 @@ blockquote {
   padding: 16px;
   background: #eee; }
 
+.wrapper {
+  height: 1000px; }
+
 .sign-up-section {
+  width: 100%;
   display: flex;
   justify-content: center; }
 
@@ -93,10 +97,12 @@ blockquote {
 .sign-up-form__info {
   color: #7e838f;
   font-size: 0.85em;
-  text-align: center; }
+  text-align: center;
+  line-height: 1.4em; }
 
 .sign-up-form__info--light {
-  color: white; }
+  color: white;
+  font-size: 0.78em; }
 
 .sign-up-form__link {
   text-decoration: none;
@@ -134,8 +140,12 @@ blockquote {
     display: none; }
 
   .sign-up-section--desktop {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
     display: flex;
-    width: 100vw; }
+    max-width: 1080px; }
     .sign-up-section--desktop .sign-up-article {
       width: 50%; }
     .sign-up-section--desktop .sign-up-form {
