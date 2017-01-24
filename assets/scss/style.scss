@@ -1,7 +1,9 @@
 $color--light: white;
 $color-text: #7e838f;
+$color-text--light: #8a959e;
 $color-accent: #f36;
 $color-link: #529fd2;
+$font-weight--thin: 300;
 $font-weight: 400;
 $font-weight--bold: 700;
 
@@ -34,8 +36,16 @@ textarea:-moz-placeholder { color:#a9a9a9; }
 blockquote {padding: 16px; background: #eee;}
 
 .wrapper {
-  height: 1000px;
+  background: url("../img/background-temporary.jpg");
+  height: 100%;
 } 
+
+.sign-up-wrapper {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .sign-up-section {
   width: 100%;
@@ -104,6 +114,12 @@ blockquote {padding: 16px; background: #eee;}
   color: $color-accent;
 }
 
+.sign-up-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(60,65,70,0.8);
+}
+
 .sign-up-section--desktop {
   display: none;
 }
@@ -146,7 +162,6 @@ blockquote {padding: 16px; background: #eee;}
 }
 
 
-
 /* Media queries
 -------------------------------------------------------------------------------*/
 
@@ -155,19 +170,109 @@ blockquote {padding: 16px; background: #eee;}
     display: none;
   }
   
+  .wrapper {
+    height: 1000px;
+  }
+
   .sign-up-section--desktop {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
     display: flex;
     max-width: 1080px;
+    border-radius: 0.4em;
+    overflow: hidden;
 
     .sign-up-article {
+      background: 
+        #202638
+        url("../img/plansignup-bg.jpg")
+        top center / cover
+        no-repeat;
       width: 50%;
+      padding: 3.2em 3.2em 2em 3.2em;
+    }
+    
+    .sign-up-article__header-wrapper {
+      margin-bottom: 2.5em;
+    }
+
+    .sign-up-article__logo {
+      height: 2.1em;
+      margin-bottom: 2em;
+    }
+
+    .sign-up-article__header {
+      font-weight: $font-weight--thin;
+      letter-spacing: 0.075em;
+      line-height: 1.05em;
+      color: $color--light;
+      text-transform: uppercase;
+    }
+    
+    .sign-up-feature-list {
+      margin-bottom: 3em;
+    }
+
+    .sign-up-feature-list__item {
+      display: flex;
+      align-items: center;
+      color: $color--light;
+      font-size: 0.91em;
+      margin-bottom: 2.5em;
+    }
+
+    .sign-up-feature-list__item--last {
+      margin-bottom: 0;
+    }
+
+    .sign-up-feature-list__icon {
+      flex: 0 0 auto;
+      height: 2em;
+      width: 2.7em;
+      margin-right: 1.5em;
+    }
+    
+    .sign-up-footer__header {
+      color: $color-text--light;
+      text-transform: uppercase;
+      font-size: 0.75em;
+      letter-spacing: 0.1em;
+      text-align: center;
+      margin-bottom: 1.7em;
+    }
+    
+    .sign-up-customers-list {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 0 1em;
+    }
+    
+    .sign-up-customers-list__item {
+      margin: 0 0.6em;
+      flex: 0 0 auto;
+    }
+
+    .sign-up-customers-list__icon {
+      height: 2em;
+    }
+
+    .sign-up-customers-list__icon--twitter {
+      height: 1em;
+    }
+
+    .sign-up-customers-list__icon--uber {
+      height: 0.9em;
+    }
+
+    .sign-up-customers-list__icon--netflix {
+      height: 1.2em;
+    }
+
+    .sign-up-customers-list__icon--evernote {
+      height: 1.7em;
     }
 
     .sign-up-form {
+      background: $color--light;
       width: 50%;
     }
 
