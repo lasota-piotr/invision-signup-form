@@ -58,13 +58,22 @@ blockquote {
 .sign-up-wrapper {
   position: fixed;
   display: flex;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center; }
 
 .sign-up-section {
+  position: relative;
   width: 100%;
   display: flex;
   justify-content: center; }
+
+.sign-up-section__close {
+  position: absolute;
+  top: -2em;
+  left: 2em;
+  width: 2em;
+  height: 2em; }
 
 .sign-up-form {
   display: flex;
@@ -91,6 +100,12 @@ blockquote {
   border-radius: 0.25em;
   text-transform: uppercase;
   letter-spacing: 0.075em; }
+  .btn:hover {
+    opacity: 0.75; }
+
+.btn--accent {
+  border-radius: 5em;
+  padding: 1.6em; }
 
 .sign-up-form__header {
   color: white;
@@ -156,9 +171,11 @@ blockquote {
 
   .sign-up-section--desktop {
     display: flex;
+    overflow: hidden;
     max-width: 1080px;
-    border-radius: 0.4em;
-    overflow: hidden; }
+    border-radius: 0.3em;
+    margin-bottom: 2em;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.5); }
     .sign-up-section--desktop .sign-up-article {
       background: #202638 url("../img/plansignup-bg.jpg") top center/cover no-repeat;
       width: 50%;
@@ -216,6 +233,57 @@ blockquote {
       height: 1.7em; }
     .sign-up-section--desktop .sign-up-form {
       background: white;
-      width: 50%; } }
+      width: 50%;
+      padding: 3.5em; }
+    .sign-up-section--desktop .sign-up-form__header {
+      font-family: Lato;
+      font-size: 1.5em;
+      color: #252b33;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.5em;
+      text-align: left;
+      width: 100%; }
+    .sign-up-section--desktop .sign-up-form__info {
+      font-size: 1.05em;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 3.3em;
+      color: #8a959e; }
+    .sign-up-section--desktop .sign-up-form__group {
+      width: 100%;
+      position: relative;
+      padding-top: 1.5em;
+      margin-bottom: 1.2em;
+      border-bottom: 2px solid #edeff3; }
+    .sign-up-section--desktop .sign-up-form__group--last {
+      margin-bottom: 4em; }
+    .sign-up-section--desktop .sign-up-form__group--focus {
+      border-bottom-color: #f36; }
+    .sign-up-section--desktop .sign-up-form__group--filled .sign-up-form__label {
+      bottom: 3em;
+      font-size: 0.8em;
+      text-transform: uppercase; }
+    .sign-up-section--desktop .sign-up-form__label {
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: 1em;
+      color: #8a959e;
+      font-size: 1.05em;
+      cursor: text;
+      transition: all 0.4s ease; }
+    .sign-up-section--desktop .sign-up-form__input {
+      display: block;
+      width: 100%;
+      color: #252b33;
+      outline: none;
+      font-size: 1em;
+      padding: 0.8em 0;
+      z-index: 99;
+      background: transparent;
+      position: relative; }
+    .sign-up-section--desktop .btn {
+      width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */

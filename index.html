@@ -54,6 +54,7 @@
 	<!-- Fonts and icons -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=latin-ext" 
 		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&amp;subset=latin-ext" rel="stylesheet">
 
 	<!-- Twitter: see https://dev.twitter.com/docs/cards/types/summary-card for details -->
 	<meta name="twitter:card" content="">
@@ -78,13 +79,20 @@
 				<img class="sign-up-form__logo" src="assets/img/logo@2x.png"></img>
 				<h2 class="sign-up-form__header">Get<br> started free!</h2>
 				<p class="sign-up-form__info">no credit card required</p>
-				<input type="text" class="sign-up-form__input" name="username" id="username" placeholder="Your name" required>
-				<input type="email" class="sign-up-form__input" name="useremail" id="useremail" placeholder="Your email" required>
-				<input type="password" class="sign-up-form__input" name="userpassword" id="userpassword" placeholder="Password" required>
+				<input type="text" class="sign-up-form__input" name="username" 
+					id="username" placeholder="Your name" required>
+				<input type="email" class="sign-up-form__input" name="useremail" 
+					id="useremail" placeholder="Your email" required>
+				<input type="password" class="sign-up-form__input" name="userpassword" 
+					id="userpassword" placeholder="Password" required>
 				<input type="Submit" class="btn" value="Sign up free">
 				<p class="sign-up-form__info">
-					By clicking "Sign Up Free" I agree to InVision’s <a href="#" class="sign-up-form__link">Terms of Service</a>.</p>
-				<p class="sign-up-form__info sign-up-form__info--light">Already have an account? <a href="#" class="sign-up-form__link sign-up-form__link--accent">Login</a></p>
+					By clicking "Sign Up Free" I agree to InVision’s 
+					<a href="#" class="sign-up-form__link">Terms of Service</a>.</p>
+				<p class="sign-up-form__info sign-up-form__info--light">
+					Already have an account? 
+					<a href="#" class="sign-up-form__link sign-up-form__link--accent">
+					Login</a></p>
 				
 			</form>
 		</section>
@@ -143,13 +151,11 @@
 					<label for="" class="sign-up-form__label">Email</label>
 					<input type="email" class="sign-up-form__input" name="useremail" id="useremail" required>
 				</div>
-				<div class="sign-up-form__group">
+				<div class="sign-up-form__group sign-up-form__group--last">
 					<label for="" class="sign-up-form__label">Password</label>
 					<input type="password" class="sign-up-form__input" name="userpassword" id="userpassword" required>
 				</div>
-				<div class="sign-up-form__group">
-					<input type="Submit" class="btn" value="Start now">
-				</div>
+				<input type="Submit" class="btn btn--accent" value="Start now">
 			</form>
 		</section>
 	</div>
