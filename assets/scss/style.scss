@@ -24,7 +24,6 @@ a:hover {color: #69f;}
 
 /* Custom text-selection colors (remove any text shadows: http://twitter.com/miketaylr/status/12228805301) */
 ::-moz-selection{background: #fcd700; color: #fff; text-shadow: none;}
-::selection {background: #fcd700; color: #fff; text-shadow: none;}
 
 /*	j.mp/webkit-tap-highlight-color */
 a:link {-webkit-tap-highlight-color: #fcd700;}
@@ -206,10 +205,6 @@ blockquote {padding: 16px; background: #eee;}
     border-radius: 0.3em;
     margin-bottom: 2em;
     box-shadow: 0 0 60px rgba(0,0,0,0.5);
-    
-    &::before {
-      
-    }
 
     .sign-up-article {
       background: 
