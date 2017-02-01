@@ -73,6 +73,7 @@
 <body>
 
 <div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
 	<div class="sign-up-wrapper">
 		<section class="sign-up-section sign-up-section--mobile">
 			<form action="" class="sign-up-form">
@@ -96,66 +97,124 @@
 				
 			</form>
 		</section>
+
+
 		<section class="sign-up-section sign-up-section--desktop">
+		
+			<object class="sign-up-section__close" 
+				data="assets/img/ic_close_white_24px.svg" type="image/svg+xml">
+			</object>
+
 			<article class="sign-up-article">
+
 				<header class="sign-up-article__header-wrapper">
-					<img class="sign-up-article__logo" src="assets/img/logo-invision.png" alt="Invision logo">
+					<img class="sign-up-article__logo" src="assets/img/logo-invision.png" 
+					alt="Invision logo">
 					<h2 class="sign-up-article__header">
 						The World's Leading Product Design Platform, Featuring:
 					</h2>
 				</header>
+
+
 				<ul class="sign-up-feature-list">
+
 					<li class="sign-up-feature-list__item">
-						<object data="assets/img/icon-standard-prototypes.svg" type="image/svg+xml" class="sign-up-feature-list__icon">prototypes icon</object>
+						<object data="assets/img/icon-standard-prototypes.svg" 
+							type="image/svg+xml" class="sign-up-feature-list__icon">
+							prototypes icon
+						</object>
 						High fidelity prototypes that look, feel, and act real.
 					</li>
+
 					<li class="sign-up-feature-list__item">
-						<object data="assets/img/icon-standard-boards.svg" type="image/svg+xml" class="sign-up-feature-list__icon">boards icon</object>
+						<object data="assets/img/icon-standard-boards.svg" 
+							type="image/svg+xml" class="sign-up-feature-list__icon">
+							boards icon
+						</object>
 						Custom mood and brand boards, galleries, presentations, and much more.
 					</li>
+
 					<li class="sign-up-feature-list__item">
-						<object data="assets/img/icon-standard-manage.svg" type="image/svg+xml" class="sign-up-feature-list__icon">manage icon</object>
+						<object data="assets/img/icon-standard-manage.svg" 
+							type="image/svg+xml" class="sign-up-feature-list__icon">
+							manage icon
+						</object>
 						Manage your screens and projects from one central location.
 					</li>
+
 					<li class="sign-up-feature-list__item sign-up-feature-list__item--last">
-						<object data="assets/img/icon-standard-collaboration.svg" type="image/svg+xml" class="sign-up-feature-list__icon">collaboration icon</object>
+						<object data="assets/img/icon-standard-collaboration.svg" 
+							type="image/svg+xml" class="sign-up-feature-list__icon">
+							collaboration icon
+						</object>
 						Better feedback, with real-time, in-browser design collaboration.
 					</li>
+
 				</ul>
+
+
 				<footer class="sign-up-footer">
-					<h3 class="sign-up-footer__header">Trusted by the World's Smartest Companies</h3>
+
+					<h3 class="sign-up-footer__header">
+						Trusted by the World's Smartest Companies
+					</h3>
+
 					<ul class="sign-up-customers-list">
+
 						<li class="sign-up-customers-list__item">
-							<img class="sign-up-customers-list__icon sign-up-customers-list__icon--twitter" src="assets/img/logo-twitter.png" alt="twitter logo">
+							<img class="sign-up-customers-list__icon sign-up-customers-list__icon--twitter" 
+								src="assets/img/logo-twitter.png" alt="twitter logo">
+						</li>
+
+						<li class="sign-up-customers-list__item">
+							<img class="sign-up-customers-list__icon sign-up-customers-list__icon--uber" 
+								src="assets/img/logo-uber.png" alt="uber logo">
 						</li>
 						<li class="sign-up-customers-list__item">
-							<img class="sign-up-customers-list__icon sign-up-customers-list__icon--uber" src="assets/img/logo-uber.png" alt="uber logo">
+							<img class="sign-up-customers-list__icon sign-up-customers-list__icon--netflix" 
+								src="assets/img/logo-netflix.png" alt="netflix logo">
 						</li>
 						<li class="sign-up-customers-list__item">
-							<img class="sign-up-customers-list__icon sign-up-customers-list__icon--netflix" src="assets/img/logo-netflix.png" alt="netflix logo">
+							<img class="sign-up-customers-list__icon sign-up-customers-list__icon--evernote" 
+								src="assets/img/logo-evernote.png" alt="evernote logo">
 						</li>
-						<li class="sign-up-customers-list__item">
-							<img class="sign-up-customers-list__icon sign-up-customers-list__icon--evernote" src="assets/img/logo-evernote.png" alt="evernote logo">
-						</li>
+
 					</ul>
+
+
 				</footer>
+
+
 			</article>
+
 			<form action="" class="sign-up-form">
+
 				<h2 class="sign-up-form__header">Try Invision Now—Free</h2>
-				<p class="sign-up-form__info">No setup fees. No requirements. No obligation.</p>
+
+				<p class="sign-up-form__info">
+					No setup fees. No requirements. No obligation.
+				</p>
+
 				<div class="sign-up-form__group">
 					<label for="" class="sign-up-form__label">Full name</label>
-					<input type="text" class="sign-up-form__input" name="username" id="username"required>
+					<input type="text" class="sign-up-form__input js-sign-up-form__input" name="username" 
+						id="username" required>
 				</div>
+
 				<div class="sign-up-form__group">
 					<label for="" class="sign-up-form__label">Email</label>
-					<input type="email" class="sign-up-form__input" name="useremail" id="useremail" required>
+					<input type="email" class="sign-up-form__input js-sign-up-form__input" name="useremail" 
+						id="useremail" required>
 				</div>
+
 				<div class="sign-up-form__group sign-up-form__group--last">
 					<label for="" class="sign-up-form__label">Password</label>
-					<input type="password" class="sign-up-form__input" name="userpassword" id="userpassword" required>
+					<input type="password" class="sign-up-form__input js-sign-up-form__input" name="userpassword" 
+						id="userpassword" required>
 				</div>
+
 				<input type="Submit" class="btn btn--accent" value="Start now">
+
 			</form>
 		</section>
 	</div>

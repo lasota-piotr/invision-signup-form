@@ -15,12 +15,12 @@ function initPage(){
 
 	console.log('page loaded');
 
-  $(".sign-up-section--desktop .sign-up-form__input").focus(function(){
+  $(".js-sign-up-form__input").focus(function(){
     $(this).parent().addClass("sign-up-form__group--focus");
     $(this).parent().addClass("sign-up-form__group--filled");
   });
 
-  $(".sign-up-section--desktop .sign-up-form__input").focusout(function(){
+  $(".js-sign-up-form__input").focusout(function(){
     $(this).parent().removeClass("sign-up-form__group--focus");
     if($(this).val() == '') {
       $(this).parent().removeClass("sign-up-form__group--filled");

@@ -63,15 +63,14 @@ blockquote {
   align-items: center; }
 
 .sign-up-section {
-  position: relative;
   width: 100%;
   display: flex;
   justify-content: center; }
 
 .sign-up-section__close {
   position: absolute;
-  top: -2em;
-  left: 2em;
+  right: 3em;
+  top: 3em;
   width: 2em;
   height: 2em; }
 
@@ -80,9 +79,14 @@ blockquote {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center; }
+  .sign-up-section--mobile .sign-up-form {
+    width: 250px; }
 
 .sign-up-form__logo {
   width: 3.75em; }
+  .sign-up-section--mobile .sign-up-form__logo {
+    margin-top: 2em;
+    margin-bottom: 2.5em; }
 
 .sign-up-form__input {
   color: #7e838f;
@@ -90,6 +94,9 @@ blockquote {
   border: none;
   border-radius: 0.2em;
   padding: 1em; }
+  .sign-up-section--mobile .sign-up-form__input {
+    width: 100%;
+    margin-bottom: 1em; }
 
 .btn {
   background: #f36;
@@ -102,6 +109,9 @@ blockquote {
   letter-spacing: 0.075em; }
   .btn:hover {
     opacity: 0.75; }
+  .sign-up-section--mobile .btn {
+    width: 100%;
+    margin-bottom: 1.2em; }
 
 .btn--accent {
   border-radius: 5em;
@@ -115,12 +125,16 @@ blockquote {
   text-align: center;
   letter-spacing: 0.25em;
   line-height: 1.1em; }
+  .sign-up-section--mobile .sign-up-form__header {
+    margin-bottom: 0.5em; }
 
 .sign-up-form__info {
   color: #7e838f;
   font-size: 0.85em;
   text-align: center;
   line-height: 1.4em; }
+  .sign-up-section--mobile .sign-up-form__info {
+    margin-bottom: 1.3em; }
 
 .sign-up-form__info--light {
   color: white;
@@ -144,21 +158,6 @@ blockquote {
 .sign-up-section--mobile {
   height: 100vh;
   background: #202638 url("../img/bg-login.jpg") top center/cover no-repeat; }
-  .sign-up-section--mobile .sign-up-form {
-    width: 250px; }
-  .sign-up-section--mobile .sign-up-form__logo {
-    margin-top: 2em;
-    margin-bottom: 2.5em; }
-  .sign-up-section--mobile .sign-up-form__header {
-    margin-bottom: 0.5em; }
-  .sign-up-section--mobile .sign-up-form__input {
-    width: 100%;
-    margin-bottom: 1em; }
-  .sign-up-section--mobile .sign-up-form__info {
-    margin-bottom: 1.3em; }
-  .sign-up-section--mobile .btn {
-    width: 100%;
-    margin-bottom: 1.2em; }
 
 /* Media queries
 -------------------------------------------------------------------------------*/

@@ -53,7 +53,6 @@ blockquote {padding: 16px; background: #eee;}
 }
 
 .sign-up-section {
-  position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -61,9 +60,8 @@ blockquote {padding: 16px; background: #eee;}
 
 .sign-up-section__close {
   position: absolute;
-  // right: -2em;
-   top: -2em;
-  left: 2em;
+  right: 3em;
+   top: 3em;
   width: 2em;
   height: 2em;
 }
@@ -73,10 +71,19 @@ blockquote {padding: 16px; background: #eee;}
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
+
+  .sign-up-section--mobile & {
+    width: 250px;
+  }
 }
 
 .sign-up-form__logo {
   width: 3.75em;
+
+  .sign-up-section--mobile & {
+    margin-top: 2em;
+    margin-bottom: 2.5em;
+  }
 }
 
 .sign-up-form__input {
@@ -85,6 +92,11 @@ blockquote {padding: 16px; background: #eee;}
   border: none;
   border-radius: 0.2em;
   padding: 1em;
+
+  .sign-up-section--mobile & {
+    width: 100%;
+    margin-bottom: 1em;
+  }
 }
 
 .btn {
@@ -99,6 +111,11 @@ blockquote {padding: 16px; background: #eee;}
 
   &:hover {
     opacity: 0.75;
+  }
+
+  .sign-up-section--mobile & {
+    width: 100%;
+    margin-bottom: 1.2em;
   }
 }
 
@@ -115,6 +132,10 @@ blockquote {padding: 16px; background: #eee;}
   text-align: center;
   letter-spacing: 0.25em;
   line-height: 1.1em;
+
+  .sign-up-section--mobile & {
+    margin-bottom: 0.5em;
+  }
 }
   
 .sign-up-form__info {
@@ -122,6 +143,10 @@ blockquote {padding: 16px; background: #eee;}
   font-size: 0.85em;
   text-align: center;
   line-height: 1.4em;
+
+  .sign-up-section--mobile & {
+    margin-bottom: 1.3em;
+  }
 }
 
 .sign-up-form__info--light {
@@ -155,35 +180,8 @@ blockquote {padding: 16px; background: #eee;}
     url("../img/bg-login.jpg")
     top center / cover
     no-repeat;
-  
-  .sign-up-form {
-    width: 250px;
-  }
-
-  .sign-up-form__logo {
-    margin-top: 2em;
-    margin-bottom: 2.5em;
-  }
-  
-  .sign-up-form__header {
-    margin-bottom: 0.5em;
-  }
-
-  .sign-up-form__input {
-    width: 100%;
-    margin-bottom: 1em;
-  }
-  
-  .sign-up-form__info {
-    margin-bottom: 1.3em;
-  }
-
-  .btn {
-    width: 100%;
-    margin-bottom: 1.2em;
-  }
-
 }
+
 
 
 /* Media queries
