@@ -1,0 +1,366 @@
+
+
+
+/* We like off-black for text. */
+body, select, input, textarea {color: #333;}
+
+a {color: #03f;}
+a:hover {color: #69f;}
+
+/* Custom text-selection colors (remove any text shadows: http://twitter.com/miketaylr/status/12228805301) */
+::-moz-selection{background: #fcd700; color: #fff; text-shadow: none;}
+::selection {background: #fcd700; color: #fff; text-shadow: none;}
+
+/*	j.mp/webkit-tap-highlight-color */
+a:link {-webkit-tap-highlight-color: #fcd700;}
+
+ins {background-color: #fcd700; color: #000; text-decoration: none;}
+mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
+
+/* Mozilla dosen't style placeholders by default */
+input:-moz-placeholder { color:#a9a9a9; }
+textarea:-moz-placeholder { color:#a9a9a9; }
+
+/* let's give blockquotes *some* default styling, because unstyled blockquotes are dangerous */
+blockquote {padding: 16px; background: #eee;}
+
+.wrapper {
+  background: url("../img/background-temporary.jpg");
+  height: 100%;
+} 
+
+.sign-up-wrapper {
+  position: fixed;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-up-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.sign-up-section__close {
+  position: absolute;
+  right: 3em;
+   top: 3em;
+  width: 2em;
+  height: 2em;
+}
+
+.sign-up-form {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+
+  .sign-up-section--mobile & {
+    width: 250px;
+  }
+}
+
+.sign-up-form__logo {
+  width: 3.75em;
+
+  .sign-up-section--mobile & {
+    margin-top: 2em;
+    margin-bottom: 2.5em;
+  }
+}
+
+.sign-up-form__input {
+  color: $color-text;
+  font-size: 0.75em;
+  border: none;
+  border-radius: 0.2em;
+  padding: 1em;
+
+  .sign-up-section--mobile & {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+}
+
+.btn {
+  background: $color-accent;
+  color: $color-white;
+  font-size: 0.9em;
+  padding: 1.2em;
+  border: none;
+  border-radius: 0.25em;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+
+  &:hover {
+    opacity: 0.75;
+  }
+
+  .sign-up-section--mobile & {
+    width: 100%;
+    margin-bottom: 1.2em;
+  }
+}
+
+.btn--accent {
+  border-radius: 5em;
+  padding: 1.6em;
+}
+  
+.sign-up-form__header {
+  color: $color-white;
+  font-size: 1.4em;
+  font-weight: $font-weight--bold;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.25em;
+  line-height: 1.1em;
+
+  .sign-up-section--mobile & {
+    margin-bottom: 0.5em;
+  }
+}
+  
+.sign-up-form__info {
+  color: $color-text;
+  font-size: 0.85em;
+  text-align: center;
+  line-height: 1.4em;
+
+  .sign-up-section--mobile & {
+    margin-bottom: 1.3em;
+  }
+}
+
+.sign-up-form__info--light {
+  color: $color-white;
+  font-size: 0.78em;
+}
+
+.sign-up-form__link {
+  text-decoration: none;
+  color: $color-link;
+}
+
+.sign-up-form__link--accent {
+  color: $color-accent;
+}
+
+.sign-up-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(60,65,70,0.8);
+}
+
+.sign-up-section--desktop {
+  display: none;
+}
+
+.sign-up-section--mobile {
+  height: 100vh;
+  background: 
+    #202638 
+    url("../img/bg-login.jpg")
+    top center / cover
+    no-repeat;
+}
+
+
+
+
+/* Media queries
+-------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 768px) {
+  .sign-up-section--mobile {
+    display: none;
+  }
+  
+  .wrapper {
+    height: 1000px;
+  }
+  
+
+  .sign-up-section--desktop {
+    display: flex;
+    overflow: hidden;
+    max-width: 1080px;
+    border-radius: 0.3em;
+    margin-bottom: 2em;
+    box-shadow: 0 0 60px rgba(0,0,0,0.5);
+    
+    &::before {
+      
+    }
+
+    .sign-up-article {
+      background: 
+        #202638
+        url("../img/plansignup-bg.jpg")
+        top center / cover
+        no-repeat;
+      width: 50%;
+      padding: 3.2em 3.2em 2em 3.2em;
+    }
+    
+    .sign-up-article__header-wrapper {
+      margin-bottom: 2.5em;
+    }
+
+    .sign-up-article__logo {
+      height: 2.1em;
+      margin-bottom: 2em;
+    }
+
+    .sign-up-article__header {
+      font-weight: $font-weight--thin;
+      letter-spacing: 0.075em;
+      line-height: 1.05em;
+      color: $color-white;
+      text-transform: uppercase;
+    }
+    
+    .sign-up-feature-list {
+      margin-bottom: 3em;
+    }
+
+    .sign-up-feature-list__item {
+      display: flex;
+      align-items: center;
+      color: $color-white;
+      font-size: 0.91em;
+      margin-bottom: 2.5em;
+    }
+
+    .sign-up-feature-list__item--last {
+      margin-bottom: 0;
+    }
+
+    .sign-up-feature-list__icon {
+      flex: 0 0 auto;
+      height: 2em;
+      width: 2.7em;
+      margin-right: 1.5em;
+    }
+    
+    .sign-up-footer__header {
+      color: $color-text--lighter;
+      text-transform: uppercase;
+      font-size: 0.75em;
+      letter-spacing: 0.1em;
+      text-align: center;
+      margin-bottom: 1.7em;
+    }
+    
+    .sign-up-customers-list {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 0 1em;
+    }
+    
+    .sign-up-customers-list__item {
+      margin: 0 0.6em;
+      flex: 0 0 auto;
+    }
+
+    .sign-up-customers-list__icon {
+      height: 2em;
+    }
+
+    .sign-up-customers-list__icon--twitter {
+      height: 1em;
+    }
+
+    .sign-up-customers-list__icon--uber {
+      height: 0.9em;
+    }
+
+    .sign-up-customers-list__icon--netflix {
+      height: 1.2em;
+    }
+
+    .sign-up-customers-list__icon--evernote {
+      height: 1.7em;
+    }
+
+    .sign-up-form {
+      background: $color-white;
+      width: 50%;
+      padding: 3.5em;
+    }
+
+    .sign-up-form__header {
+      font-family: $font-family--accent;
+      font-size: 1.5em;
+      color: $color-text--dark;
+      font-weight: $font-weight;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.5em;
+      text-align: left;
+      width: 100%;
+    }
+
+    .sign-up-form__info {
+      font-size: 1.05em;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 3.3em;
+      color: $color-text--lighter;
+    }
+
+    .sign-up-form__group {
+      width: 100%;
+      position: relative;
+      padding-top: 1.5em;
+      margin-bottom: 1.2em;
+      border-bottom: 2px solid $color-text--light;
+    }
+    
+    .sign-up-form__group--last {
+      margin-bottom: 4em;
+    }
+
+
+    .sign-up-form__group--focus {
+      border-bottom-color: $color-accent;
+    }
+
+    .sign-up-form__group--filled {
+      .sign-up-form__label {
+        bottom: 3em;
+        font-size: 0.8em;
+        text-transform: uppercase;
+      }
+    }
+
+    .sign-up-form__label {
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: 1em;
+      color: $color-text--lighter;
+      font-size: 1.05em;
+      cursor: text;
+      transition: all 0.4s ease;
+    }
+
+    .sign-up-form__input {
+      display: block;
+      width: 100%;
+      color: $color-text--dark;
+      outline: none;
+      font-size: 1em;
+      padding: 0.8em 0;
+      z-index: 99;
+      background: transparent;
+      position: relative;
+    }
+
+    .btn {
+      width: 100%;
+    }
+  }
+}

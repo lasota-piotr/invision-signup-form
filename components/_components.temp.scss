@@ -1,46 +1,5 @@
-$color-white: white;
-$color-text--light: #edeff3;
-$color-text--lighter: #8a959e;
-$color-text: #7e838f;
-$color-text--dark: #252b33;
-$color-accent: #f36;
-$color-link: #529fd2;
-$font-weight--thin: 300;
-$font-weight: 400;
-$font-weight--bold: 700;
-$font-family: Roboto;
-$font-family--accent: Lato;
-
-/* A Linux- and Windows-friendly sans-serif font stack: http://prospects.mhurrell.co.uk/post/updating-the-helvetica-font-stack */
-body {font: 16px Roboto, Freesans, sans-serif;}
-
-/* Using local fonts? Check out Font Squirrel's webfont generator: http://www.fontsquirrel.com/tools/webfont-generator */
-
-/* We like off-black for text. */
-body, select, input, textarea {color: #333;}
-
-a {color: #03f;}
-a:hover {color: #69f;}
-
-/* Custom text-selection colors (remove any text shadows: http://twitter.com/miketaylr/status/12228805301) */
-::-moz-selection{background: #fcd700; color: #fff; text-shadow: none;}
-::selection {background: #fcd700; color: #fff; text-shadow: none;}
-
-/*	j.mp/webkit-tap-highlight-color */
-a:link {-webkit-tap-highlight-color: #fcd700;}
-
-ins {background-color: #fcd700; color: #000; text-decoration: none;}
-mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
-
-/* Mozilla dosen't style placeholders by default */
-input:-moz-placeholder { color:#a9a9a9; }
-textarea:-moz-placeholder { color:#a9a9a9; }
-
-/* let's give blockquotes *some* default styling, because unstyled blockquotes are dangerous */
-blockquote {padding: 16px; background: #eee;}
-
 .wrapper {
-  background: url("../img/background-temporary.jpg");
+  background: url("img/background-temporary.jpg");
   height: 100%;
 } 
 
@@ -101,7 +60,7 @@ blockquote {padding: 16px; background: #eee;}
 
 .btn {
   background: $color-accent;
-  color: $color-white;
+  color: #fff;
   font-size: 0.9em;
   padding: 1.2em;
   border: none;
@@ -125,7 +84,7 @@ blockquote {padding: 16px; background: #eee;}
 }
   
 .sign-up-form__header {
-  color: $color-white;
+  color: #fff;
   font-size: 1.4em;
   font-weight: $font-weight--bold;
   text-transform: uppercase;
@@ -150,7 +109,7 @@ blockquote {padding: 16px; background: #eee;}
 }
 
 .sign-up-form__info--light {
-  color: $color-white;
+  color: #fff;
   font-size: 0.78em;
 }
 
@@ -177,17 +136,18 @@ blockquote {padding: 16px; background: #eee;}
   height: 100vh;
   background: 
     #202638 
-    url("../img/bg-login.jpg")
+    url("img/bg-login.jpg")
     top center / cover
     no-repeat;
 }
 
 
 
+
 /* Media queries
 -------------------------------------------------------------------------------*/
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .sign-up-section--mobile {
     display: none;
   }
@@ -212,7 +172,7 @@ blockquote {padding: 16px; background: #eee;}
     .sign-up-article {
       background: 
         #202638
-        url("../img/plansignup-bg.jpg")
+        url("img/plansignup-bg.jpg")
         top center / cover
         no-repeat;
       width: 50%;
@@ -232,7 +192,7 @@ blockquote {padding: 16px; background: #eee;}
       font-weight: $font-weight--thin;
       letter-spacing: 0.075em;
       line-height: 1.05em;
-      color: $color-white;
+      color: #fff;
       text-transform: uppercase;
     }
     
@@ -243,7 +203,7 @@ blockquote {padding: 16px; background: #eee;}
     .sign-up-feature-list__item {
       display: flex;
       align-items: center;
-      color: $color-white;
+      color: #fff;
       font-size: 0.91em;
       margin-bottom: 2.5em;
     }
@@ -301,7 +261,7 @@ blockquote {padding: 16px; background: #eee;}
     }
 
     .sign-up-form {
-      background: $color-white;
+      background: #fff;
       width: 50%;
       padding: 3.5em;
     }
