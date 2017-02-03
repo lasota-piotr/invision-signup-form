@@ -1,5 +1,5 @@
 .wrapper {
-  background: url("img/background-temporary.jpg");
+  background: url("../img/background-temporary.jpg");
   height: 100%;
 } 
 
@@ -20,7 +20,7 @@
 .sign-up-section__close {
   position: absolute;
   right: 3em;
-   top: 3em;
+  top: 3em;
   width: 2em;
   height: 2em;
 }
@@ -59,29 +59,27 @@
 }
 
 .btn {
-  background: $color-accent;
-  color: #fff;
-  font-size: 0.9em;
-  padding: 1.2em;
-  border: none;
-  border-radius: 0.25em;
-  text-transform: uppercase;
+  // font-size: 0.9em;
+  // padding: 1.2em;
+  // border: none;
+  // border-radius: 0.25em;
+  // text-transform: uppercase;
   letter-spacing: 0.075em;
 
-  &:hover {
-    opacity: 0.75;
-  }
+  // &:hover {
+  //   opacity: 0.75;
+  // }
 
   .sign-up-section--mobile & {
-    width: 100%;
+    // width: 100%;
     margin-bottom: 1.2em;
   }
 }
 
-.btn--accent {
-  border-radius: 5em;
-  padding: 1.6em;
-}
+// .btn--accent {
+//   border-radius: 5em;
+//   padding: 1.6em;
+// }
   
 .sign-up-form__header {
   color: #fff;
@@ -119,7 +117,7 @@
 }
 
 .sign-up-form__link--accent {
-  color: $color-accent;
+  color: $brand-color;
 }
 
 .sign-up-wrapper {
@@ -136,7 +134,7 @@
   height: 100vh;
   background: 
     #202638 
-    url("img/bg-login.jpg")
+    url("../img/bg-login.jpg")
     top center / cover
     no-repeat;
 }
@@ -165,14 +163,10 @@
     margin-bottom: 2em;
     box-shadow: 0 0 60px rgba(0,0,0,0.5);
     
-    &::before {
-      
-    }
-
     .sign-up-article {
       background: 
         #202638
-        url("img/plansignup-bg.jpg")
+        url("../img/plansignup-bg.jpg")
         top center / cover
         no-repeat;
       width: 50%;
@@ -299,7 +293,7 @@
 
 
     .sign-up-form__group--focus {
-      border-bottom-color: $color-accent;
+      border-bottom-color: $brand-color;
     }
 
     .sign-up-form__group--filled {
@@ -333,8 +327,5 @@
       position: relative;
     }
 
-    .btn {
-      width: 100%;
-    }
   }
 }

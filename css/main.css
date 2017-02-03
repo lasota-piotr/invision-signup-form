@@ -3,16 +3,6 @@
    INUITCSS
    ========================================================================== */
 /**
- * inuitcss, by @csswizardry
- *
- * github.com/inuitcss | inuitcss.com
- */
-/**
- * This is an example inuitcss manifest file. DO NOT MODIFY THIS FILE DIRECTLY.
- * Instead, copy and paste it into your own CSS directory and make additions,
- * extensions, and modifications there.
- */
-/**
  * CONTENTS
  *
  * SETTINGS
@@ -575,7 +565,8 @@ html {
   overflow-y: scroll;
   /* [2] */
   min-height: 100%;
-  /* [3] */ }
+  /* [3] */
+  font-family: Roboto, Freesans, sans-serif; }
 
 /* ==========================================================================
    #HEADINGS
@@ -674,12 +665,12 @@ table {
 /* Size variants.
    ========================================================================== */
 .o-wrapper--tiny {
-  padding-right: 6px;
-  padding-left: 6px; }
+  padding-right: 14px;
+  padding-left: 14px; }
 
 .o-wrapper--small {
-  padding-right: 12px;
-  padding-left: 12px; }
+  padding-right: 19px;
+  padding-left: 19px; }
 
 .o-wrapper--large {
   padding-right: 48px;
@@ -789,14 +780,14 @@ table {
 /* Gutter size modifiers.
    ========================================================================== */
 .o-layout--tiny {
-  margin-left: -6px; }
+  margin-left: -14px; }
   .o-layout--tiny > .o-layout__item {
-    padding-left: 6px; }
+    padding-left: 14px; }
 
 .o-layout--small {
-  margin-left: -12px; }
+  margin-left: -19px; }
   .o-layout--small > .o-layout__item {
-    padding-left: 12px; }
+    padding-left: 19px; }
 
 .o-layout--large {
   margin-left: -48px; }
@@ -904,16 +895,16 @@ table {
  * reversible options for all available sizes.
  */
 .o-media--tiny > .o-media__img {
-  margin-right: 6px; }
+  margin-right: 14px; }
 .o-media--tiny.o-media--reverse > .o-media__img {
   margin-right: 0;
-  margin-left: 6px; }
+  margin-left: 14px; }
 
 .o-media--small > .o-media__img {
-  margin-right: 12px; }
+  margin-right: 19px; }
 .o-media--small.o-media--reverse > .o-media__img {
   margin-right: 0;
-  margin-left: 12px; }
+  margin-left: 19px; }
 
 .o-media--large > .o-media__img {
   margin-right: 48px; }
@@ -1006,16 +997,16 @@ table {
 /* Size variants.
    ========================================================================== */
 .o-flag--tiny > .o-flag__img {
-  padding-right: 6px; }
+  padding-right: 14px; }
 .o-flag--tiny.o-flag--reverse > .o-flag__img {
   padding-right: 0;
-  padding-left: 6px; }
+  padding-left: 14px; }
 
 .o-flag--small > .o-flag__img {
-  padding-right: 12px; }
+  padding-right: 19px; }
 .o-flag--small.o-flag--reverse > .o-flag__img {
   padding-right: 0;
-  padding-left: 12px; }
+  padding-left: 19px; }
 
 .o-flag--large > .o-flag__img {
   padding-right: 48px; }
@@ -1116,10 +1107,10 @@ table {
   padding: 0; }
 
 .o-box--tiny {
-  padding: 6px; }
+  padding: 14px; }
 
 .o-box--small {
-  padding: 12px; }
+  padding: 19px; }
 
 .o-box--large {
   padding: 48px; }
@@ -1145,9 +1136,9 @@ table {
   .o-block--flush > .o-block__img {
     margin-bottom: 0; }
   .o-block--tiny > .o-block__img {
-    margin-bottom: 6px; }
+    margin-bottom: 14px; }
   .o-block--small > .o-block__img {
-    margin-bottom: 12px; }
+    margin-bottom: 19px; }
   .o-block--large > .o-block__img {
     margin-bottom: 48px; }
   .o-block--huge > .o-block__img {
@@ -1308,11 +1299,11 @@ table {
    ========================================================================== */
 .o-table--tiny th,
 .o-table--tiny td {
-  padding: 6px; }
+  padding: 14px; }
 
 .o-table--small th,
 .o-table--small td {
-  padding: 12px; }
+  padding: 19px; }
 
 .o-table--large th,
 .o-table--large td {
@@ -1366,10 +1357,10 @@ table {
 /* Size variants.
    ========================================================================== */
 .o-pack--tiny {
-  border-spacing: 6px; }
+  border-spacing: 14px; }
 
 .o-pack--small {
-  border-spacing: 12px; }
+  border-spacing: 19px; }
 
 .o-pack--default {
   border-spacing: 24px; }
@@ -1415,20 +1406,22 @@ table {
   /* [4] */
   cursor: pointer;
   /* [5] */
-  padding: 12px 24px;
-  transition: all 300ms ease-in-out;
-  border-radius: 3px; }
+  padding: 19px 24px;
+  transition: all 150ms ease-in-out;
+  border: none;
+  border-radius: 5em;
+  text-transform: uppercase; }
 
 /* Style variants
    ========================================================================== */
 .c-btn--primary {
-  background-color: #4a8ec2; }
+  background-color: #f36; }
   .c-btn--primary, .c-btn--primary:hover, .c-btn--primary:active, .c-btn--primary:focus {
     text-decoration: none;
     /* [4] */
     color: #fff; }
   .c-btn--primary:hover, .c-btn--primary:focus {
-    background-color: #3774a2; }
+    background-color: #ff668c; }
 
 .c-btn--secondary {
   background-color: #2f4054; }
@@ -1447,10 +1440,15 @@ table {
   .c-btn--tertiary:hover, .c-btn--tertiary:focus {
     color: #3774a2; }
 
+/* Rounded variants
+   ========================================================================== */
+.c-btn--less-rounded {
+  border-radius: 3px; }
+
 /* Size variants
    ========================================================================== */
 .c-btn--small {
-  padding: 6px 12px; }
+  padding: 14px 19px; }
 
 .c-btn--large {
   padding: 24px 48px; }
@@ -1462,11 +1460,11 @@ table {
  */
 .c-btn--ghost {
   border: 2px solid currentColor;
-  padding: 10px 22px; }
+  padding: 17px 22px; }
   .c-btn--ghost, .c-btn--ghost:hover, .c-btn--ghost:active, .c-btn--ghost:focus {
     background: none; }
   .c-btn--ghost.c-btn--small {
-    padding: 4px 10px; }
+    padding: 12px 17px; }
   .c-btn--ghost.c-btn--large {
     padding: 22px 46px; }
   .c-btn--ghost.c-btn--primary {
@@ -1483,7 +1481,7 @@ table {
       color: #fff; }
 
 .wrapper {
-  background: url("img/background-temporary.jpg");
+  background: url("../img/background-temporary.jpg");
   height: 100%; }
 
 .sign-up-wrapper {
@@ -1530,26 +1528,12 @@ table {
     margin-bottom: 1em; }
 
 .btn {
-  background: #f36;
-  color: white;
-  font-size: 0.9em;
-  padding: 1.2em;
-  border: none;
-  border-radius: 0.25em;
-  text-transform: uppercase;
   letter-spacing: 0.075em; }
-  .btn:hover {
-    opacity: 0.75; }
   .sign-up-section--mobile .btn {
-    width: 100%;
     margin-bottom: 1.2em; }
 
-.btn--accent {
-  border-radius: 5em;
-  padding: 1.6em; }
-
 .sign-up-form__header {
-  color: white;
+  color: #fff;
   font-size: 1.4em;
   font-weight: 700;
   text-transform: uppercase;
@@ -1568,7 +1552,7 @@ table {
     margin-bottom: 1.3em; }
 
 .sign-up-form__info--light {
-  color: white;
+  color: #fff;
   font-size: 0.78em; }
 
 .sign-up-form__link {
@@ -1588,7 +1572,7 @@ table {
 
 .sign-up-section--mobile {
   height: 100vh;
-  background: #202638 url("img/bg-login.jpg") top center/cover no-repeat; }
+  background: #202638 url("../img/bg-login.jpg") top center/cover no-repeat; }
 
 /* Media queries
 -------------------------------------------------------------------------------*/
@@ -1607,7 +1591,7 @@ table {
     margin-bottom: 2em;
     box-shadow: 0 0 60px rgba(0, 0, 0, 0.5); }
     .sign-up-section--desktop .sign-up-article {
-      background: #202638 url("img/plansignup-bg.jpg") top center/cover no-repeat;
+      background: #202638 url("../img/plansignup-bg.jpg") top center/cover no-repeat;
       width: 50%;
       padding: 3.2em 3.2em 2em 3.2em; }
     .sign-up-section--desktop .sign-up-article__header-wrapper {
@@ -1619,14 +1603,14 @@ table {
       font-weight: 300;
       letter-spacing: 0.075em;
       line-height: 1.05em;
-      color: white;
+      color: #fff;
       text-transform: uppercase; }
     .sign-up-section--desktop .sign-up-feature-list {
       margin-bottom: 3em; }
     .sign-up-section--desktop .sign-up-feature-list__item {
       display: flex;
       align-items: center;
-      color: white;
+      color: #fff;
       font-size: 0.91em;
       margin-bottom: 2.5em; }
     .sign-up-section--desktop .sign-up-feature-list__item--last {
@@ -1662,7 +1646,7 @@ table {
     .sign-up-section--desktop .sign-up-customers-list__icon--evernote {
       height: 1.7em; }
     .sign-up-section--desktop .sign-up-form {
-      background: white;
+      background: #fff;
       width: 50%;
       padding: 3.5em; }
     .sign-up-section--desktop .sign-up-form__header {
@@ -1712,9 +1696,7 @@ table {
       padding: 0.8em 0;
       z-index: 99;
       background: transparent;
-      position: relative; }
-    .sign-up-section--desktop .btn {
-      width: 100%; } }
+      position: relative; } }
 /* ==========================================================================
    #CLEARFIX
    ========================================================================== */
@@ -3182,10 +3164,10 @@ table {
   padding: 24px !important; }
 
 .u-padding-tiny {
-  padding: 6px !important; }
+  padding: 14px !important; }
 
 .u-padding-small {
-  padding: 12px !important; }
+  padding: 19px !important; }
 
 .u-padding-large {
   padding: 48px !important; }
@@ -3200,10 +3182,10 @@ table {
   padding-top: 24px !important; }
 
 .u-padding-top-tiny {
-  padding-top: 6px !important; }
+  padding-top: 14px !important; }
 
 .u-padding-top-small {
-  padding-top: 12px !important; }
+  padding-top: 19px !important; }
 
 .u-padding-top-large {
   padding-top: 48px !important; }
@@ -3218,10 +3200,10 @@ table {
   padding-right: 24px !important; }
 
 .u-padding-right-tiny {
-  padding-right: 6px !important; }
+  padding-right: 14px !important; }
 
 .u-padding-right-small {
-  padding-right: 12px !important; }
+  padding-right: 19px !important; }
 
 .u-padding-right-large {
   padding-right: 48px !important; }
@@ -3236,10 +3218,10 @@ table {
   padding-bottom: 24px !important; }
 
 .u-padding-bottom-tiny {
-  padding-bottom: 6px !important; }
+  padding-bottom: 14px !important; }
 
 .u-padding-bottom-small {
-  padding-bottom: 12px !important; }
+  padding-bottom: 19px !important; }
 
 .u-padding-bottom-large {
   padding-bottom: 48px !important; }
@@ -3254,10 +3236,10 @@ table {
   padding-left: 24px !important; }
 
 .u-padding-left-tiny {
-  padding-left: 6px !important; }
+  padding-left: 14px !important; }
 
 .u-padding-left-small {
-  padding-left: 12px !important; }
+  padding-left: 19px !important; }
 
 .u-padding-left-large {
   padding-left: 48px !important; }
@@ -3273,12 +3255,12 @@ table {
   padding-right: 24px !important; }
 
 .u-padding-horizontal-tiny {
-  padding-left: 6px !important;
-  padding-right: 6px !important; }
+  padding-left: 14px !important;
+  padding-right: 14px !important; }
 
 .u-padding-horizontal-small {
-  padding-left: 12px !important;
-  padding-right: 12px !important; }
+  padding-left: 19px !important;
+  padding-right: 19px !important; }
 
 .u-padding-horizontal-large {
   padding-left: 48px !important;
@@ -3297,12 +3279,12 @@ table {
   padding-bottom: 24px !important; }
 
 .u-padding-vertical-tiny {
-  padding-top: 6px !important;
-  padding-bottom: 6px !important; }
+  padding-top: 14px !important;
+  padding-bottom: 14px !important; }
 
 .u-padding-vertical-small {
-  padding-top: 12px !important;
-  padding-bottom: 12px !important; }
+  padding-top: 19px !important;
+  padding-bottom: 19px !important; }
 
 .u-padding-vertical-large {
   padding-top: 48px !important;
@@ -3320,10 +3302,10 @@ table {
   margin: 24px !important; }
 
 .u-margin-tiny {
-  margin: 6px !important; }
+  margin: 14px !important; }
 
 .u-margin-small {
-  margin: 12px !important; }
+  margin: 19px !important; }
 
 .u-margin-large {
   margin: 48px !important; }
@@ -3338,10 +3320,10 @@ table {
   margin-top: 24px !important; }
 
 .u-margin-top-tiny {
-  margin-top: 6px !important; }
+  margin-top: 14px !important; }
 
 .u-margin-top-small {
-  margin-top: 12px !important; }
+  margin-top: 19px !important; }
 
 .u-margin-top-large {
   margin-top: 48px !important; }
@@ -3356,10 +3338,10 @@ table {
   margin-right: 24px !important; }
 
 .u-margin-right-tiny {
-  margin-right: 6px !important; }
+  margin-right: 14px !important; }
 
 .u-margin-right-small {
-  margin-right: 12px !important; }
+  margin-right: 19px !important; }
 
 .u-margin-right-large {
   margin-right: 48px !important; }
@@ -3374,10 +3356,10 @@ table {
   margin-bottom: 24px !important; }
 
 .u-margin-bottom-tiny {
-  margin-bottom: 6px !important; }
+  margin-bottom: 14px !important; }
 
 .u-margin-bottom-small {
-  margin-bottom: 12px !important; }
+  margin-bottom: 19px !important; }
 
 .u-margin-bottom-large {
   margin-bottom: 48px !important; }
@@ -3392,10 +3374,10 @@ table {
   margin-left: 24px !important; }
 
 .u-margin-left-tiny {
-  margin-left: 6px !important; }
+  margin-left: 14px !important; }
 
 .u-margin-left-small {
-  margin-left: 12px !important; }
+  margin-left: 19px !important; }
 
 .u-margin-left-large {
   margin-left: 48px !important; }
@@ -3411,12 +3393,12 @@ table {
   margin-right: 24px !important; }
 
 .u-margin-horizontal-tiny {
-  margin-left: 6px !important;
-  margin-right: 6px !important; }
+  margin-left: 14px !important;
+  margin-right: 14px !important; }
 
 .u-margin-horizontal-small {
-  margin-left: 12px !important;
-  margin-right: 12px !important; }
+  margin-left: 19px !important;
+  margin-right: 19px !important; }
 
 .u-margin-horizontal-large {
   margin-left: 48px !important;
@@ -3435,12 +3417,12 @@ table {
   margin-bottom: 24px !important; }
 
 .u-margin-vertical-tiny {
-  margin-top: 6px !important;
-  margin-bottom: 6px !important; }
+  margin-top: 14px !important;
+  margin-bottom: 14px !important; }
 
 .u-margin-vertical-small {
-  margin-top: 12px !important;
-  margin-bottom: 12px !important; }
+  margin-top: 19px !important;
+  margin-bottom: 19px !important; }
 
 .u-margin-vertical-large {
   margin-top: 48px !important;

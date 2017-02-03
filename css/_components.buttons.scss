@@ -25,7 +25,9 @@
   cursor: pointer; /* [5] */
   padding: $inuit-global-spacing-unit-small $inuit-global-spacing-unit;
   transition: $global-transition;
-  border-radius: $global-radius;
+  border: none;
+  border-radius: $btn-radius;
+  text-transform: uppercase;
 }
 
 
@@ -36,7 +38,7 @@
    ========================================================================== */
 
 .c-btn--primary {
-  background-color: #4a8ec2;
+  background-color: $brand-color;
 
   &,
   &:hover,
@@ -48,7 +50,7 @@
 
   &:hover,
   &:focus {
-    background-color: #3774a2;
+    background-color: $brand-color--highlight;
   }
 
 }
@@ -88,6 +90,14 @@
     color: #3774a2;
   }
 
+}
+
+
+/* Rounded variants
+   ========================================================================== */
+
+.c-btn--less-rounded {
+  border-radius: $global-radius;
 }
 
 

@@ -6,7 +6,14 @@
 
 // Standardise some UI treatments.
 $global-radius: 3px !default;
-$global-transition: all 300ms ease-in-out !default;
+$btn-radius: 5em !default;
+
+$global-transition: all 150ms ease-in-out !default;
 
 
 $system-fonts: Roboto, Freesans, sans-serif;
+
+$font-weight--thin: 300;
+$font-weight: 400;
+$font-weight--bold: 700;
+$font-family--accent: Lato;

@@ -41,7 +41,7 @@
 	<!-- <link rel="shortcut icon" href="favicon.ico" /> -->
 
 	<!-- concatenate and minify for production -->
-	<link rel="stylesheet" href="main.css" />
+	<link rel="stylesheet" href="css/main.css" />
 
 	<!-- Lea Verou's prefixfree (http://leaverou.github.io/prefixfree/), lets you use un-prefixed properties in your CSS files -->
 	<script src="js/libs/prefixfree.min.js"></script>
@@ -71,7 +71,7 @@
 
 <body>
 
-<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+<div class="wrapper">
 
 	<div class="sign-up-wrapper">
 		<section class="sign-up-section sign-up-section--mobile">
@@ -85,7 +85,7 @@
 					id="useremail" placeholder="Your email" required>
 				<input type="password" class="sign-up-form__input" name="userpassword" 
 					id="userpassword" placeholder="Password" required>
-				<input type="Submit" class="btn" value="Sign up free">
+				<input type="Submit" class="c-btn c-btn--primary c-btn--small c-btn--less-rounded u-1/1" value="Sign up free">
 				<p class="sign-up-form__info">
 					By clicking "Sign Up Free" I agree to InVision’s 
 					<a href="#" class="sign-up-form__link">Terms of Service</a>.</p>
@@ -115,7 +115,7 @@
 				</header>
 
 
-				<ul class="sign-up-feature-list">
+				<ul class="sign-up-feature-list o-list-bare">
 
 					<li class="sign-up-feature-list__item">
 						<object data="img/icon-standard-prototypes.svg" 
@@ -158,7 +158,7 @@
 						Trusted by the World's Smartest Companies
 					</h3>
 
-					<ul class="sign-up-customers-list">
+					<ul class="sign-up-customers-list o-list-bare">
 
 						<li class="sign-up-customers-list__item">
 							<img class="sign-up-customers-list__icon sign-up-customers-list__icon--twitter" 
@@ -212,7 +212,7 @@
 						id="userpassword" required>
 				</div>
 
-				<input type="Submit" class="btn btn--accent" value="Start now">
+				<input type="Submit" class="c-btn c-btn--primary u-1/1" value="Start now">
 
 			</form>
 		</section>
